@@ -101,12 +101,12 @@ class _RandomWordsState extends State<RandomWords> {
           ).toList();
 
           return new Scaffold(
-            // Add 6 lines from here...
+
             appBar: new AppBar(
               title: const Text('Saved Suggestions'),
             ),
             body: new ListView(children: divided),
-          ); // ... to here.
+          );
         },
       ),
     );

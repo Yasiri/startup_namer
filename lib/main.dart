@@ -37,6 +37,30 @@ class _RandomWordsState extends State<RandomWords> {
           new IconButton(icon: const Icon(Icons.list), onPressed: _pushSaved),
         ],
       ),
+      drawer: Drawer(child:
+      ListView(
+        padding: EdgeInsets.zero,
+        children: <Widget>[
+          DrawerHeader(
+            child: Text('Drawer Header'),
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
+          ),
+          ListTile(
+            title: Text('Item 1'),
+            onTap: () {
+            },
+          ),
+          ListTile(
+            title: Text('Item 2'),
+            onTap: () {
+              // setStat()
+            },
+          ),
+        ],
+      ),
+      ),
       body: _buildSuggestions(),
     );
   }
